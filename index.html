@@ -9,6 +9,8 @@
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 </head>
 <body>
+<div id= "page">
+<div id="logo">
 
 <div class="header">
 	<div class="container-fluid">
@@ -16,27 +18,85 @@
   	<p>"Because injury...doesn't have to hurt"</p> 
   	</div>
 </div>
-
-<ul class ="nav nav-tabs">
-	<li><a href="#">Home</a></li>
+</div>
+<ul id= "navigation">
+	<li><a href="#" class= "on">Home</a></li>
 	<li><a href="#">About</a></li>
 	<li><a href="#">Contact Us</a></li>
 	<li><a href="#">Sign Up</a></li>
 </ul>
+<p>
+	<img src="girl_swimming.jpg">
+</p>
+<p>
+	This "REZtorative Approach of "bioweaving" has repeatedly been shown to turn weeks  of therapy into days, and days of discomfort and swelling, into minutes--to effortlessly, in most cases, put you back on your "feet" within a week!
+</p>
 
-
+</div>
 </body>
 <style>
-.nav-tabs{
-	margin: 0px;
-	color: #004466;
-	background-color: #e6fffa;
+body { 
+	width: auto;
+	font-size: 100%;
+	font-family: Helvetica, Arial, sans-serif;
+	letter-spacing: 0.15em;
+	background-color: #bad4e3;
 }
+
+h1{
+	font-family: Impact, Arial, sans-serif;
+}
+#page {
+	max-width: 960px;
+	min-width: 740px;
+	margin:10px auto 10px auto;
+	padding: 20px;
+	border: 4px double #000;
+	background-color: #ffffff;
+}
+
+#logo{
+	width: 150px;
+	margin:10px auto 25px auto;
+}
+
+ul{
+	width:570px;
+	padding: 15px;
+	margin: 0px auto 0px auto;
+	border-top: 2px solid #000;
+	border-bottom: 1px solid #000;
+	text-align: center;
+}
+
+li {
+	display: inline;
+	margin:0px 3px;
+}
+
+p{
+	text-align: center;
+	width: 650px;
+	margin: 20px auto 20px auto;
+	font-weight: normal;
+}
+a {
+	color: #000000;
+	text-transform: uppercase;
+	text-decoration: none;
+	margin: 6px 18px 5px 18px;
+}
+a:hover, a.on{
+	color: #598098;
+	background-color: #ffffff
+}
+
+
 
 .header{
 	color: #004466;
 	background-color: #e6fffa;
-	padding: 20px;
+	padding: 0px;
 }
 </style>
 </html>
