@@ -9,94 +9,117 @@
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 </head>
 <body>
-<div id= "page">
-<div id="logo">
+	<nav class="navbar navbar-default">
+		<div class="container-fluid">
+			<div class="nabar-header">
+				<a class = "navbar-brand" href="#"><img src="logo.png"></a>
 
-<div class="header">
-	<div class="container-fluid">
-  	<h1>Rapid-Ez Approach</h1>
-  	<p>"Because injury...doesn't have to hurt"</p> 
-  	</div>
-</div>
-</div>
-<ul id= "navigation">
-	<li><a href="#" class= "on">Home</a></li>
-	<li><a href="#">About</a></li>
-	<li><a href="#">Contact Us</a></li>
-	<li><a href="#">Sign Up</a></li>
-</ul>
-<p>
-	<img src="girl_swimming.jpg">
-</p>
-<p>
-	This "REZtorative Approach of "bioweaving" has repeatedly been shown to turn weeks  of therapy into days, and days of discomfort and swelling, into minutes--to effortlessly, in most cases, put you back on your "feet" within a week!
-</p>
-
-</div>
+			</div>
+			<ul class="nav navbar-nav">
+				<li class="active"><a href="#"><p><span class="glyphicon glyphicon-search "></span></p></a></li>
+			</ul>
+		</div>	
+	</nav>
+	<div class="container gallery-container"> 
+		<div class="a-gallery">
+			<div class="row">
+				<div class="col-sm-12 col-md-4">
+					<a class= "images" href="#">
+						<img src="yoga.jpg">
+					</a>
+				</div>
+				<div class="col-sm-6 col-md-4">
+					<a class="images" href="#">
+						<img src="biking.jpg">
+					</a>
+				</div>
+				<div class="col-sm-6 col-md-4">
+					<a class= "images" href="#">
+						<img src="ballet.jpg">
+					</a>
+				</div>
+				<div class="col-sm-12 col-md-8">
+					<a class= "images" href="#">
+						<img src="girl_floating.jpg">
+					</a>
+				</div>
+				<div class="col-sm-6 col-md-4">
+					<a class="images" href="#">
+						<img src="football.jpg">
+					</a>
+				</div>
+				<div class="col-sm-6 col-md-4">
+					<a class = "images" href="#">
+						<img src="kayaking.jpg">
+					</a>
+				</div>
+			</div>
+			
+		</div>
+	</div>
 </body>
+
 <style>
-body { 
-	width: auto;
-	font-size: 100%;
-	font-family: Helvetica, Arial, sans-serif;
-	letter-spacing: 0.15em;
-	background-color: #bad4e3;
+body{
+	background-image: url(background4.jpg);: 
 }
-
-h1{
-	font-family: Impact, Arial, sans-serif;
-}
-#page {
-	max-width: 960px;
-	min-width: 740px;
-	margin:10px auto 10px auto;
-	padding: 20px;
-	border: 4px double #000;
-	background-color: #ffffff;
-}
-
-#logo{
-	width: 150px;
-	margin:10px auto 25px auto;
-}
-
-ul{
-	width:570px;
-	padding: 15px;
-	margin: 0px auto 0px auto;
-	border-top: 2px solid #000;
-	border-bottom: 1px solid #000;
+.images{
+	background-color: transparent;
 	text-align: center;
+	border-color: white;
+}
+li{
+	position: top right;
 }
 
-li {
-	display: inline;
-	margin:0px 3px;
+.a-gallery {
+    padding: 40px;
 }
 
-p{
-	text-align: center;
-	width: 650px;
-	margin: 20px auto 20px auto;
-	font-weight: normal;
+/* Override bootstrap column paddings */
+.a-gallery .row > div {
+    padding: 2px;
 }
-a {
-	color: #000000;
-	text-transform: uppercase;
-	text-decoration: none;
-	margin: 6px 18px 5px 18px;
+
+.a-gallery .images img {
+    width: 100%;
+    border-radius: 0;
+    position: relative;
 }
-a:hover, a.on{
-	color: #598098;
-	background-color: #ffffff
+
+.a-gallery .images:before {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-top: -13px;
+    margin-left: -13px;
+    opacity: 0;
+    color: #fff;
+    font-size: 26px;
+    font-family: 'Glyphicons Halflings';
+    content: '\e003';
+    pointer-events: none;
+    z-index: 9000;
+    transition: 0.4s;
 }
 
 
+.a-gallery .images:after {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    background-color: rgba(46, 132, 206, 0.7);
+    content: '';
+    transition: 0.4s;
+}
 
-.header{
-	color: #004466;
-	background-color: #e6fffa;
-	padding: 0px;
+.a-gallery .images:hover:after,
+.a-gallery .images:hover:before {
+    opacity: 1;
 }
 </style>
+
 </html>
