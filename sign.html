@@ -8,47 +8,62 @@
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
   <link href="https://fonts.googleapis.com/css?family=Bellefair" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Droid+Serif|Josefin+Sans|Lora" rel="stylesheet">
+   <link rel="icon" type="image" href="yc.jpeg"> 
+</head>
 </head>
 <style>
-	body {
-		background-color: white;
-	}
+	 body {
+    background-image: url("wall2.jpg");
+  }
 
 	.row.content {
 		padding: 100px;
 	}
 
-	.navbar-default {
-		font-family: 'Bellefair', serif;
-		background-color: rgb(230, 255, 250);
-	}
+	
+  .navbar.navbar-inverse {
+    border-radius: 20px;
+    font-family: 'Lora', serif;
+    background-color: rgb(0, 0, 26);
+
+  }
 
 	.navbar-nav {
 		float: right;
 		padding: 0px 50px;
+    	color:rgb(153, 179, 255);
 	}
+
 	
 
 	.col-sm-8.text-left {
 		text-align: center;
-		font-family: 'Bellefair', serif;
+		font-family: 'Lora', serif;
 		background-color: ;
 	}
 
 	p.groove {
 		border-style: groove;
 	}
+
+	footer {
+      background-color: rgb(51, 51, 153);
+      color: white;
+      padding: 15px;
+    }
 </style>
 <body>
-	<nav class="navbar navbar-default">
+	<nav class="navbar navbar-inverse">
   		<div class="container-fluid">
-    		<div class="navbar-header">
-      			<a class="navbar-brand" href="index.html">Rapid-EZ Approach</a>
+    		<div class="navbar-header text-center" style="color: white; font-family: 'Josefin Sans', sans-serif; font-size: 20px">
+      			<a class = "navbar-brand" href="index.html"><img src="logo.png"></a>
+            "Because injury doesn't have to hurt"
     		</div>
     		<ul class="nav navbar-nav">
       			<li class="active"><a href="sign.html">Sign Up</a></li>
       			<li><a href="index.html">Home</a></li>
-      			<li><a href="#">About</a></li>
+      			<li><a href="rapidezaboutpage.html">About</a></li>
       			<li><a href="contact.html">Contact</a></li>
     		</ul>
   		</div>
@@ -56,12 +71,16 @@
 	<div class="col-sm-2">
 	</div>
 	<div class="container-fluid text-center"> 
-		<div class="col-sm-8 text-left"> 
-		<h1>Sign Up for a Session!</h1>
-		<p>Now that you have finished reading about this new way of...</p>
-		<iframe src="https://docs.google.com/forms/u/0/d/e/1FAIpQLSeJk0XtTNv37p3pNHp31wqLHfVVQzfb8wV6zxiZ04oyrnRvRQ/viewform?embedded=true" width="650" height="800" frameborder="0" marginheight="0" marginwidth="0">Loading...</iframe>
+		<div class="col-sm-8 text-left" style="border-radius:10px; background-color:white;"> 
+		<h1>Sign Up for an Assessment!</h1>
+		<p>To begin your certification process, you will first have to do an assessment.  Please fill out the form to begin:</br>
+		Once the form is filled you will recieve an email regarding the next steps.</p>
+		<iframe src="https://docs.google.com/forms/u/0/d/e/1FAIpQLSeJk0XtTNv37p3pNHp31wqLHfVVQzfb8wV6zxiZ04oyrnRvRQ/viewform?embedded=true" width="650" height="800" frameborder="0" marginheight="0" marginwidth="0" style="border-radius:25px">Loading...</iframe>
 		</div>
 		
 	</div>
+	<footer class="container-fluid">
+  		<p>Footer Text</p>
+	</footer>
 </body>
 </html>

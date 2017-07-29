@@ -8,57 +8,90 @@
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
   <link href="https://fonts.googleapis.com/css?family=Bellefair" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Droid+Serif|Josefin+Sans|Lora" rel="stylesheet">
+  <link rel="icon" type="image" href="yc.jpeg"> 
 </head>
 <style>
-	.navbar-default {
-		font-family: 'Bellefair', serif;
-		background-color: rgb(230, 255, 250);
-	}
-
+  body {
+    background-image: url("wall2.jpg");
+  }
 	.navbar-nav {
 		float: right;
 		padding: 0px 50px;
+    color:rgb(153, 179, 255);
 	}
 
-	.col-sm-7.text-center {
-		background-color: white;
-	}
+
 
 	.col-sm-5.sidenav {
-		background-color: white ;
+    margin: 50px 0px;
 		padding: -50px 0px;
 	}
+
+  .col-sm-10 {
+    border-radius: 25px;
+    background-color: white;
+    margin: auto;
+
+  }
+
+  .navbar.navbar-inverse {
+    border-radius: 20px;
+    font-family: 'Lora', serif;
+    background-color: rgb(0, 0, 26);
+
+  }
+  
+  .col-sm-7.text-center {
+    font-family: 'Lora', serif;
+    
+  }
 
 </style>
 <body>
 
-	<nav class="navbar navbar-default">
+
+<!-- NAVBAR -->
+	<nav class="navbar navbar-inverse ">
   		<div class="container-fluid">
-    		<div class="navbar-header">
-      			<a class="navbar-brand" href="index.html">Rapid-EZ Approach</a>
+    		<div class="navbar-header text-center" style="color: white; font-family: 'Josefin Sans', sans-serif; font-size: 20px">
+      			<a class = "navbar-brand" href="index.html"><img src="logo.png"></a>
+            "Because injury doesn't have to hurt"
     		</div>
     		<ul class="nav navbar-nav">
       			<li class="active"><a href="contact.html">Contact Us</a></li>
       			<li><a href="index.html">Home</a></li>
-      			<li><a href="#">About</a></li>
+      			<li><a href="rapidezaboutpage.html">About</a></li>
       			<li><a href="sign.html">Sign Up</a></li>
     		</ul>
   		</div>
 	</nav>
-	<div class="container-fluid text-center">    
-  <div class="row content">
-    <div class="col-sm-7 text-center"> 
-      <h1>Contact Information</h1>
-		<h3>Contact us if you have any questions.</h3>
-				<p>dsjkblfjakl</p>
-    </div>
-    <div class="col-sm-5 sidenav">
-        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3169.1948157196853!2d-122.06661468477984!3d37.40886994089977!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x808fb765aa824165%3A0x15bc65e03fbb45b5!2sNASA+Ames+Research+Center!5e0!3m2!1sen!2sus!4v1500571371035" width="400" height="450" frameborder="0" style="border:5" allowfullscreen></iframe>
+
+  <!-- LOGO -->
+  <!-- <img src="Picture1.png" style="width:15%; margin:25px; background-color:rgb(31, 61, 122)"> 
+  <img src="yc.jpeg" style="width:15%; border-radius:25px; margin: 15px" class="img-thumbnail" alt="Cinque Terre"> -->
+
+  <!-- CONTENT -->
+  <div class="container-fluid">
+    <div class="col-sm-1"></div>
+    <div class="col-sm-10">
+      <div class="col-sm-7 text-center">
+        <h1 style="font-weight:bold;color:rgb(0, 0, 102); text-decoration:underline;">Contact Information</br></br></h1>
+        <h3 style="color:rgb(0, 64, 128);">Contact the Rapid-Ez Team With </br>Questions or Concerns</br></br></h3>
+          
+        <img src="loc.png">
+        <p style="font-size:17px;font-weight:bold;color:rgb(0, 0, 102);">We are located at:</p>
+        <p>NASA Ames Research Center</br>
+          Building 20, South Akron Rd.</br>
+          Moffett Field, California 94035</br></br></p>
+        <img src="chat.png">
+        <p style="font-size:17px;font-weight:bold;color:rgb(0, 0, 102);">Email Us at:</p><p>rapid.ez.approach@gmail.com</p>
+      </div>
+      <div class="col-sm-5 sidenav">
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3169.1347413283256!2d-122.05818359999999!3d37.410289999999996!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xbcfe4956c948eb93!2sSingularity+University!5e0!3m2!1sen!2sus!4v1501176998328" width="400" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
+      </div>
     </div>
   </div>
-</div>
-	
-	
 
 </body>
 </html>

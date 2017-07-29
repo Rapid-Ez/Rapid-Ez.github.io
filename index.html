@@ -9,47 +9,46 @@
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 </head>
 <body>
-	<nav class="navbar navbar-default">
+	<nav class="navbar navbar-inverse">
 		<div class="container-fluid">
-			<div class="nabar-header">
-				<a class = "navbar-brand" href="#"><img src="logo.png"></a>
+			<div class="nabar-header text-center" style="color: white; font-family: 'Josefin Sans', sans-serif; font-size: 15px ">
+				<a class = "navbar-brand" href="index.html"><img src="logo.png"></a>
+				<p>"Because Injury does'nt have to hurt!"</p>
 
 			</div>
-			<ul class="nav navbar-nav">
-				<li class="active"><a href="#"><p><span class="glyphicon glyphicon-search "></span></p></a></li>
-			</ul>
+			
 		</div>	
 	</nav>
 	<div class="container gallery-container"> 
 		<div class="a-gallery">
 			<div class="row">
 				<div class="col-sm-12 col-md-4">
-					<a class= "images" href="#">
+					<a class= "images_about" href="rapidezaboutpage.html">
 						<img src="yoga.jpg">
 					</a>
 				</div>
 				<div class="col-sm-6 col-md-4">
-					<a class="images" href="contact.html">
+					<a class="images1" href="#">
 						<img src="biking.jpg">
 					</a>
 				</div>
 				<div class="col-sm-6 col-md-4">
-					<a class= "images" href="#">
+					<a class= "images_contact" href="contact.html">
 						<img src="ballet.jpg">
 					</a>
 				</div>
 				<div class="col-sm-10 col-md-8">
-					<a class= "images" href="#">
+					<a class= "images1" href="#">
 						<img src="girl_floating.jpg">
 					</a>
 				</div>
 				<div class="col-sm-6 col-md-4">
-					<a class="images" href="sign.html">
+					<a class="images1" href="#">
 						<img src="football.jpg">
 					</a>
 				</div>
 				<div class="col-sm-6 col-md-4">
-					<a class = "images" href="#">
+					<a class = "images_sign_up" href="sign.html">
 						<img src="kayaking.jpg">
 					</a>
 				</div>
@@ -61,16 +60,47 @@
 
 <style>
 body{
-	background-image: url(background5.jpg);: 
+	background-image: url(back.jpg);: 
 }
+p{
+	text-align: left;
+	padding-top: 15px;
+}
+
+.navbar.navbar-inverse {
+    border-radius: 60px;
+    font-family: 'Lora', serif;
+    background-color: rgb(0, 0, 26);
+ }
+
 .images{
 	background-color: transparent;
 	text-align: center;
 	border-color: white;
 }
-li{
-	position: top right;
+.images1{
+	background-color: transparent;
+	text-align: center;
+	border-color: white;
 }
+.images_about{
+	background-color: transparent;
+	text-align: center;
+	border-color: white;
+}
+.images_contact {
+	background-color: transparent;
+	text-align: center;
+	border-color: white;
+}
+.images_sign_up {
+	background-color: transparent;
+	text-align: center;
+	border-color: white;
+}
+
+
+
 
 .a-gallery {
     padding: 40px;
@@ -86,8 +116,28 @@ li{
     border-radius: 0;
     position: relative;
 }
+.a-gallery .images1 img {
+    width: 100%;
+    border-radius: 0;
+    position: relative;
+}
+.a-gallery .images_about img {
+    width: 100%;
+    border-radius: 0;
+    position: relative;
+}
+.a-gallery .images_contact img {
+    width: 100%;
+    border-radius: 0;
+    position: relative;
+}
+.a-gallery .images_sign_up img {
+    width: 100%;
+    border-radius: 0;
+    position: relative;
+}
 
-.a-gallery .images:before {
+.a-gallery .images_about:before {
     position: absolute;
     top: 50%;
     left: 50%;
@@ -97,14 +147,14 @@ li{
     color: #fff;
     font-size: 26px;
     font-family: 'Glyphicons Halflings';
-    content: '\e003';
+    content: '\e135';
     pointer-events: none;
     z-index: 9000;
     transition: 0.4s;
 }
 
 
-.a-gallery .images:after {
+.a-gallery .images_about:after {
     position: absolute;
     top: 0;
     left: 0;
@@ -116,8 +166,74 @@ li{
     transition: 0.4s;
 }
 
-.a-gallery .images:hover:after,
-.a-gallery .images:hover:before {
+.a-gallery .images_about:hover:after,
+.a-gallery .images_about:hover:before {
+    opacity: 1;
+}
+.a-gallery .images_contact:before {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-top: -13px;
+    margin-left: -13px;
+    opacity: 0;
+    color: #fff;
+    font-size: 26px;
+    font-family: 'Glyphicons Halflings';
+    content: '\2709';
+    pointer-events: none;
+    z-index: 9000;
+    transition: 0.4s;
+}
+
+
+.a-gallery .images_contact:after {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    background-color: rgba(46, 132, 206, 0.7);
+    content: '';
+    transition: 0.4s;
+}
+
+.a-gallery .images_contact:hover:after,
+.a-gallery .images_contact:hover:before {
+    opacity: 1;
+}
+.a-gallery .images_sign_up:before {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-top: -13px;
+    margin-left: -13px;
+    opacity: 0;
+    color: #fff;
+    font-size: 26px;
+    font-family: 'Glyphicons Halflings';
+    content: '\270f';
+    pointer-events: none;
+    z-index: 9000;
+    transition: 0.4s;
+}
+
+
+.a-gallery .images_sign_up:after {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    background-color: rgba(46, 132, 206, 0.7);
+    content: '';
+    transition: 0.4s;
+}
+
+.a-gallery .images_sign_up:hover:after,
+.a-gallery .images_sign_up:hover:before {
     opacity: 1;
 }
 </style>
